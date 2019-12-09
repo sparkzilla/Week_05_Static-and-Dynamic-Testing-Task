@@ -1,0 +1,17 @@
+class Card
+  attr_reader :suit, :value
+
+  def initialize(suit, value)
+    @suit = suit
+    @value = value
+  end
+
+  def checkforAce
+    if (@value == 1)
+      return true
+    else
+      return false
+    end
+  end
+
+end
